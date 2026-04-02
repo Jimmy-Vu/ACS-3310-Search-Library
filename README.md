@@ -16,6 +16,9 @@ description
 **searchPosts**
 
 ## Example Usage (hypothetical code)
+```ts
+# example code
+```
 ## Edge Cases
 ## Design Notes
 explain key decisions
