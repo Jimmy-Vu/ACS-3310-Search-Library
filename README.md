@@ -1,8 +1,8 @@
 # Post Search
 
-## Purpose (1–2 sentences)
+## Purpose
 Search post content.
-## Exports (3–7 total)
+## Exports
 For each:
 name
 inputs
