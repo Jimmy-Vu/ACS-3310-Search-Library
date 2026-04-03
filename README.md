@@ -10,9 +10,9 @@ output
 description
 
 **buildSearchableText**
-- Input: (`Post`)
-- Output: (`string`)
+- **Input**: (`Post`)
 - **Description**: combine searchable fields into one search string
+- **Output**: (`string`)
 
 **matchesQuery**
 - **Input**: (`Post`, `query string`)
