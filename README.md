@@ -21,7 +21,34 @@ Search post content.
 
 ## Example Usage (hypothetical code)
 ```ts
-# example code
+export type PostStatus = 'draft' | 'review' | 'published'
+
+export type Post = {
+  id: string
+  title: string
+  body: string
+  author: string
+  tags: string[]
+  category: string
+  status: PostStatus
+  createdAt: string
+  updatedAt: string
+}
+
+const postArray: Post[] = [...];
+const query = "hot dog";
+
+// buildSearchbleText example
+const searchableText = buildSearchableText(post);
+
+// searchPosts example
+const searchReturnArray = searchPosts(postArray, query);
+
+// matchesQuery example
+const firstPost = searchReturnArray[0];
+const queryMatches = matchesQuery(firstPost, query);
+
+
 ```
 ## Edge Cases
 ## Design Notes
