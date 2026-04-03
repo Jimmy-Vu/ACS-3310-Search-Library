@@ -3,11 +3,6 @@
 ## Purpose
 Search post content.
 ## Exports
-For each:
-name
-inputs
-output
-description
 
 **buildSearchableText**
 - **Input**: (`Post`)
