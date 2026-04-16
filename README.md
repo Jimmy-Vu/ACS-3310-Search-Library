@@ -13,7 +13,7 @@ Search post content.
 **`searchPosts(posts: Post[], query: string): Post[]`**
 - **Description**: filters the array to only posts that match the query. Uses `matchesQuery` internally — the returned posts are those for which `matchesQuery` returns `true`
 
-## Example Usage (hypothetical code)
+## Example Usage
 ```ts
 export type PostStatus = 'draft' | 'review' | 'published'
 
@@ -54,5 +54,3 @@ If the query is an empty string (`""`), `searchPosts` returns all posts in the a
 
 ## Design Notes
 Search is case-insensitive and whitespace normalized via `.toLowerCase()` and `.trim()`. Post fields are tokenized into individual words for matching.
-
-Matching is fuzzy: each word in the query is compared against each word in the post, allowing for small typos. The allowed number of character differences scales with word length, so short words require a closer match than longer ones. This prevents unrelated words from matching just because they share a few characters.
