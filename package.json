@@ -1,6 +1,6 @@
 {
-  "name": "acs-3310-search-library",
-  "version": "1.0.0",
+  "name": "postkit-search-library",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
